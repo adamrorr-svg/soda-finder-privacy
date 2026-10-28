@@ -58,7 +58,11 @@
   and chosen search distance are sent to our server, which asks Google Places for nearby restaurants and returns
   the results to your phone. We do not store your location. Google receives the search location to answer it;
   see <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. You can deny or turn off location
-  access at any time in your device settings; the app then can't show nearby restaurants.</p>
+  access at any time in your device settings.</p>
+  <p>Instead of your location, you can type a zip code, city or address to search from. The app looks it up
+  with your phone's built-in map service (Apple's on iPhone, Google's on Android), or, if that isn't available,
+  with Google Places through our server. We don't store what you type; your few most recent places are saved
+  only on your device.</p>
 
   <h3>Anonymous ID</h3>
   <p>The first time the app connects, it creates an anonymous account for your device, identified by a random ID.
@@ -82,8 +86,9 @@
   saved only on your device.</p>
 
   <h3>Information kept only on your device</h3>
-  <p>Your chosen soda, search distance, preferred maps app, the people you've hidden, copies of your own reports,
-  and whether you've accepted the community rules are stored on your device and are not sent to us.</p>
+  <p>Your chosen soda, search distance, preferred maps app, recent places you searched from, the people you've
+  hidden, copies of your own reports, and whether you've accepted the community rules are stored on your device
+  and are not sent to us.</p>
 
   <h3>Opening a maps app</h3>
   <p>When you tap a restaurant's address, the app opens Apple Maps, Google Maps or Waze with that restaurant's
@@ -102,7 +107,7 @@
       <thead><tr><th>Provider</th><th>What for</th><th>What it receives</th></tr></thead>
       <tbody>
         <tr><td><a href="https://supabase.com/privacy">Supabase</a></td><td>Hosts our database, anonymous accounts and server</td><td>Anonymous ID, reports, flags, search requests, IP address (in server logs)</td></tr>
-        <tr><td><a href="https://policies.google.com/privacy">Google Places</a></td><td>Restaurant names, addresses and locations, plus websites, phone numbers and hours when you ask for them</td><td>The location and distance of each search; the restaurant's ID when you ask for its details</td></tr>
+        <tr><td><a href="https://policies.google.com/privacy">Google Places</a></td><td>Restaurant names, addresses and locations, plus websites, phone numbers and hours when you ask for them</td><td>The location and distance of each search; the restaurant's ID when you ask for its details; a typed place, when your phone can't look it up itself</td></tr>
         <tr><td><a href="https://www.hcaptcha.com/privacy">hCaptcha</a></td><td>Spam and bot protection</td><td>Device and browser information, IP address, once per device</td></tr>
       </tbody>
     </table>
