@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soda Finder Support</title>
+<style>
+  :root { --bg: #ffffff; --ink: #10202b; --muted: #5a6b76; --line: #d5e0e6; --accent: #0d8178; --panel: #f3f7f9; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1920; --ink: #e4edf1; --muted: #93a6b1; --line: #233741; --accent: #3cc4b8; --panel: #172832; color-scheme: dark; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem max(1.25rem, env(safe-area-inset-left)) 4rem; }
+  header { display: flex; align-items: center; gap: .75rem; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: 0; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .4rem; }
+  p { margin: .5rem 0; }
+  .contact { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.25rem; margin-top: 1.5rem; }
+  .contact a { font-size: 1.1rem; font-weight: 600; }
+  a { color: var(--accent); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <svg width="40" height="40" viewBox="0 0 30 30" aria-hidden="true">
+      <path d="M7 9h16l-2 17a2 2 0 0 1-2 1.8h-8A2 2 0 0 1 9 26z" fill="var(--accent)"/>
+      <rect x="5.5" y="6" width="19" height="4" rx="2" fill="var(--ink)"/>
+      <path d="M16 6 L19 1.5" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="13" cy="16" r="1.3" fill="var(--bg)"/><circle cx="17" cy="20" r="1" fill="var(--bg)"/><circle cx="14" cy="23" r="1.2" fill="var(--bg)"/>
+    </svg>
+    <h1>Soda Finder Support</h1>
+  </header>
+
+  <div class="contact">
+    <p>Questions, problems or feedback? Email us:</p>
+    <p><a href="mailto:sodafinder.app@gmail.com">sodafinder.app@gmail.com</a></p>
+    <p>We read every message and reply as soon as we can.</p>
+  </div>
+
+  <h2>Why doesn't the app show restaurants near me?</h2>
+  <p>Soda Finder needs your location. Check that location access is allowed for Soda Finder in your phone's
+  settings, then pull down on the Nearby list to try again. Try a bigger distance (3, 5 or 10 miles) if you're
+  somewhere with few restaurants.</p>
+
+  <h2>A restaurant shows the wrong soda</h2>
+  <p>Open the restaurant and tap "Report something different" or "Update what they serve". The newest report
+  is what everyone sees. Chain information comes from each chain's announced beverage partner, and some
+  locations differ.</p>
+
+  <h2>I saw something offensive</h2>
+  <p>Open the restaurant and tap "Report a problem". We review reports within 24 hours. You can also tap
+  "Hide this person's reports" to stop seeing anything from that person.</p>
+
+  <h2>How do I delete my data?</h2>
+  <p>Open the Chains tab, scroll to "Your data" at the bottom, and copy your anonymous ID. Email it to us and
+  we'll delete your reports and anonymous account within 30 days. See the
+  <a href="./#your-choices">privacy policy</a> for details.</p>
+
+  <footer>
+    <p><a href="./">Privacy policy</a></p>
+    <p>Soda Finder is not affiliated with The Coca-Cola Company, PepsiCo, Keurig Dr Pepper or any restaurant.</p>
+  </footer>
+</main>
+</body>
+</html>
